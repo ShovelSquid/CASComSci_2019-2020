@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C55FA3992371DB1B007C74B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55FA3982371DB1B007C74B9 /* ViewController.swift */; };
 		C57D99E4236C9CE3003A774B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57D99E3236C9CE3003A774B /* AppDelegate.swift */; };
 		C57D99E6236C9CE3003A774B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57D99E5236C9CE3003A774B /* SceneDelegate.swift */; };
 		C57D99EB236C9CE3003A774B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C57D99E9236C9CE3003A774B /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C55FA3982371DB1B007C74B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C57D99E0236C9CE3003A774B /* XRDS Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XRDS Dictionary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57D99E3236C9CE3003A774B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C57D99E5236C9CE3003A774B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				C57D99E5236C9CE3003A774B /* SceneDelegate.swift */,
 				C57D99F7236C9D05003A774B /* TableViewController.swift */,
 				C57D99E9236C9CE3003A774B /* Main.storyboard */,
+				C55FA3982371DB1B007C74B9 /* ViewController.swift */,
 				C57D99EC236C9CE3003A774B /* Assets.xcassets */,
 				C57D99EE236C9CE3003A774B /* LaunchScreen.storyboard */,
 				C57D99F1236C9CE3003A774B /* Info.plist */,
@@ -140,6 +143,7 @@
 			files = (
 				C57D99E4236C9CE3003A774B /* AppDelegate.swift in Sources */,
 				C57D99F8236C9D05003A774B /* TableViewController.swift in Sources */,
+				C55FA3992371DB1B007C74B9 /* ViewController.swift in Sources */,
 				C57D99E6236C9CE3003A774B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
