@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,9 +22,10 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="yt5-OF-Kel"/>
                                 </connections>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NH8-gd-3tE">
-                                <rect key="frame" x="20" y="325" width="374" height="115"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NH8-gd-3tE">
+                                <rect key="frame" x="20" y="268" width="374" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -46,8 +47,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Ess-wn-0AF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4FX-H7-GmL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NH8-gd-3tE" secondAttribute="trailing" constant="20" id="C1z-4a-kYd"/>
-                            <constraint firstItem="NH8-gd-3tE" firstAttribute="top" secondItem="Ess-wn-0AF" secondAttribute="bottom" constant="65" id="Mot-mQ-wbo"/>
                             <constraint firstItem="Ess-wn-0AF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Q1z-BF-PIb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DpL-xQ-K7E" secondAttribute="bottom" constant="88" id="Qnt-46-581"/>
                             <constraint firstItem="DpL-xQ-K7E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XOJ-Ba-ekf"/>
@@ -56,7 +55,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rr1-4r-Wfj" secondAttribute="trailing" constant="20" id="ki5-Qw-cbj"/>
                             <constraint firstItem="DpL-xQ-K7E" firstAttribute="top" secondItem="rr1-4r-Wfj" secondAttribute="bottom" constant="139" id="oRn-SN-eWe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DpL-xQ-K7E" secondAttribute="trailing" constant="20" id="reE-kh-ZyU"/>
-                            <constraint firstItem="NH8-gd-3tE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uzp-6A-zi4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -28,6 +28,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     let potionList: KeyValuePairs = ["Healing": 15, "Poison": 40, "Invisibility": 70, "Strengthening": 20, "Magic Regen": 35, "Stamina Regen": 25, "Void Potion": 200]
     
+    var inventoryList = [""]
+    
     var Septims: Int = 200
     
     override func viewDidLoad() {
@@ -43,10 +45,22 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             Label.text = "I'm sorry, but you don't seem to have enough septims to purchase this potion."
         }
         else {
-            Label.text = "Thank you for purchasing a \(potionList[num].key) potion. That will be \(potionList[num].value) septims please."
+            inventoryList.append("\(potionList[num].key)")
+            let output = showInventory()
+            Label.text = output
             Septims -= potionList[num].value
             SeptimCount.text = "You have \(Septims) Septims left."
         }
+    }
+    
+    func showInventory() -> String {
+        var output: String = ""
+        output += "Inventory: \n"
+        for each in inventoryList {
+            output += "\(each)"
+            output += "\n"
+        }
+        return output
     }
     
 

@@ -65,8 +65,10 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         Button.backgroundColor = baseButtonColor
-        Button.frame = CGRect(x: 160, y: 400, width: 100, height: 100)
-        Button.layer.cornerRadius = 0.5 * Button.bounds.size.width
+        Button.frame = CGRect(x: 150, y: 400, width: 100, height: 100)
+//        Button.layer.cornerRadius = 0.5 * Button.bounds.size.width
+//        Button.clipsToBounds = true
+        
     }
     
     @IBAction func pressingButton(_ sender: UIButton) {
