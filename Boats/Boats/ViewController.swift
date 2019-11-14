@@ -12,20 +12,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var TitleLabel: UILabel!
     @IBOutlet weak var TextLabel: UILabel!
     
-    var BoatName:String = ""
-    var BoatStuff:[String] = [""]
+    var boat:Boat?
     
     var output = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        TitleLabel.text = BoatName
+        TitleLabel.text = boat!.name
         
-        output += "Color: \(BoatStuff[0])"
+        output += "Color: \(boat!.color)"
         output += "\n"
-        output += "Size: \(BoatStuff[1])"
+        output += "Size: \(boat!.size)"
         output += "\n"
-        output += "Dolphin Power: \(BoatStuff[2])"
+        output += "Dolphin Power: \(boat!.dolphinPower)"
         output += "\n"
         
         TextLabel.text = output

@@ -9,19 +9,22 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-    let myBoats = ["SS Wizard" : ["Rainbow", "Normal", "20 Unicrons"],
-                   "SS Submarine" : ["Invisible", "Nuclear", "Powerful"],
-                   "Titanic" : ["Rusted", "In Half", "Negative"],
-                   "PHOENIX 2" : ["Black and White", "Huge", "The Most"],
-                   "SS Barbarian" : ["Red", "Muscly", "9 Orcas"],
-                   "The Absolute Unit" : ["Unknown", "20,000 - 40,000 Square Kilometers", "Unknown"]
+//    let myBoats = ["SS Wizard" : ["Rainbow", "Normal", "20 Unicrons"],
+//                   "SS Submarine" : ["Invisible", "Nuclear", "Powerful"],
+//                   "Titanic" : ["Rusted", "In Half", "Negative"],
+//                   "PHOENIX 2" : ["Black and White", "Huge", "The Most"],
+//                   "SS Barbarian" : ["Red", "Muscly", "9 Orcas"],
+//                   "The Absolute Unit" : ["Unknown", "20,000 - 40,000 Square Kilometers", "Unknown"]
+//    ]
+    let boats:[Boat] = [
+        Boat(n: "SS Wizard", c: "Rainbow", s: "Normal", dp: "20 Unicrons"),
+        Boat(n: "SS Submarine", c: "Invisible", s: "Nuclear", dp: "Powerful"),
+        Boat(n: "Titanic", c: "Rusted", s: "In Half", dp: "Negative")
     ]
 
-    var BoatTitles = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        BoatTitles = Array(myBoats.keys).sorted()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -38,13 +41,13 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return myBoats.keys.count
+        return boats.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
-        cell.textLabel!.text = BoatTitles[indexPath.row]
+        cell.textLabel!.text = boats[indexPath.row].name
         // Configure the cell...
 
         return cell
@@ -94,10 +97,9 @@ class TableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         let indexPath = self.tableView.indexPathForSelectedRow
                 
-        let boat = BoatTitles[indexPath!.row]
+        let b = boats[indexPath!.row]
         
-        vc.BoatName = boat
-        vc.BoatStuff = myBoats[boat]!
+        vc.boat = b
     }
 
 }
