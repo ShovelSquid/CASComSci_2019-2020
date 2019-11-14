@@ -19,7 +19,10 @@ class TableViewController: UITableViewController {
     let boats:[Boat] = [
         Boat(n: "SS Wizard", c: "Rainbow", s: "Normal", dp: "20 Unicrons"),
         Boat(n: "SS Submarine", c: "Invisible", s: "Nuclear", dp: "Powerful"),
-        Boat(n: "Titanic", c: "Rusted", s: "In Half", dp: "Negative")
+        Boat(n: "Titanic", c: "Rusted", s: "In Half", dp: "Negative"),
+        Boat(n: "PHOENIX 2", c: "Black and White", s: "Huge", dp: "The Most"),
+        Boat(n: "SS Barbarian", c: "Red", s: "Muscly", dp: "9 Orcas"),
+        Boat(n: "The Absolute Unit", c: "Unknown", s: "20,000 - 40,000 Square Kilometers", dp: "Unknown")
     ]
 
     
