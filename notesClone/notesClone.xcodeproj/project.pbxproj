@@ -14,6 +14,7 @@
 		C5AABC43237DC4F9001C81BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5AABC42237DC4F9001C81BF /* Assets.xcassets */; };
 		C5AABC46237DC4F9001C81BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5AABC44237DC4F9001C81BF /* LaunchScreen.storyboard */; };
 		C5AABC4E237DC53A001C81BF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AABC4D237DC53A001C81BF /* TableViewController.swift */; };
+		C5FBFFFA237F1759009012C9 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FBFFF9237F1759009012C9 /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C5AABC45237DC4F9001C81BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5AABC47237DC4F9001C81BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5AABC4D237DC53A001C81BF /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C5FBFFF9237F1759009012C9 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				C5AABC39237DC4F7001C81BF /* AppDelegate.swift */,
 				C5AABC3B237DC4F7001C81BF /* SceneDelegate.swift */,
 				C5AABC3D237DC4F7001C81BF /* ViewController.swift */,
+				C5FBFFF9237F1759009012C9 /* Note.swift */,
 				C5AABC3F237DC4F7001C81BF /* Main.storyboard */,
 				C5AABC4D237DC53A001C81BF /* TableViewController.swift */,
 				C5AABC42237DC4F9001C81BF /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5FBFFFA237F1759009012C9 /* Note.swift in Sources */,
 				C5AABC3E237DC4F7001C81BF /* ViewController.swift in Sources */,
 				C5AABC3A237DC4F7001C81BF /* AppDelegate.swift in Sources */,
 				C5AABC3C237DC4F7001C81BF /* SceneDelegate.swift in Sources */,

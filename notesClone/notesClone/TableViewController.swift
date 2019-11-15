@@ -11,10 +11,37 @@ import UIKit
 class TableViewController: UITableViewController {
     @IBOutlet weak var plusButton: UIBarButtonItem!
     
-    var notes = [""]
+    var notes:[Note] = [Note]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let note1 = Note()
+        note1.note = "Hello! Welcome to Notes-2.o!"
+        notes.append(note1)
+        
+        let note2 = Note()
+        note2.note = "This is another note pertaining to Notes-2.o!"
+        notes.append(note2)
+        
+        let note3 = Note()
+        note3.note = "Stop looking at these notes! Notes-2.o! is a versatile tool and you can add your own!"
+        notes.append(note3)
+        
+        let note4 = Note()
+        note4.note = "yeah I mean this person just keeps looking at my notes, I'm trying to stop him but I don't know how much longer I can keep him away"
+        notes.append(note4)
+        
+        let note5 = Note()
+        note5.note = "Hey! There's nothing here! Stop looking!"
+        notes.append(note5)
+        
+        let note6 = Note()
+        note6.note = "this person is hecking persistent! Soon they'll find out that Notes-2.o! is just a clone of Notes!"
+        notes.append(note6)
+        
+        let note7 = Note()
+        note7.note = "Alright, you win. Notes-2.o! is just a clone of Notes. I can no longer stop you from perusing my notes. Look at whatever you want, I'm done."
+        notes.append(note7)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -25,10 +52,6 @@ class TableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    @IBAction func addNote(_ sender: UIBarButtonItem) {
-        let title = "Hello \(notes.count)"
-        notes.append(title)
-    }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -43,7 +66,9 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
+        
+        let title = notes[indexPath.row].note
+        cell.textLabel!.text = title
         // Configure the cell...
         return cell
     }
@@ -92,6 +117,17 @@ class TableViewController: UITableViewController {
         // Get the new view controller using segue.destination.
         let vc = segue.destination as! ViewController
         // Pass the selected object to the new view controller.
+        let indexPath = self.tableView.indexPathForSelectedRow
+        if indexPath != nil {
+            vc.note = notes[indexPath!.row]
+        }
+        else {
+            let newNote = Note()
+            newNote.note = "New Note"
+            notes.append(newNote)
+            vc.note = newNote
+        }
+        
     }
 
 }
