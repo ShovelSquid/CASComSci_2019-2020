@@ -10,12 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextView!
+    @IBOutlet weak var dateTitle: UINavigationItem!
     
     var note:Note?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         textField.text = note!.note
+        dateTitle.title = "\(note!.date)"
         // Do any additional setup after loading the view.
         
     }

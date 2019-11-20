@@ -67,7 +67,7 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        let title = notes[indexPath.row].note
+        let title = "\(notes[indexPath.row].date): \(notes[indexPath.row].note)"
         cell.textLabel!.text = title
         // Configure the cell...
         return cell

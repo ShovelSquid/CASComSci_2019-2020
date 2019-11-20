@@ -75,6 +75,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="gzN-nc-krK"/>
                     <connections>
+                        <outlet property="dateTitle" destination="gzN-nc-krK" id="0Bw-9V-5Ci"/>
                         <outlet property="textField" destination="qf1-JN-IdM" id="0MR-iR-Fh9"/>
                     </connections>
                 </viewController>
