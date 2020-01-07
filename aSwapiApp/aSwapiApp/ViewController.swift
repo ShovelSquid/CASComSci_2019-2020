@@ -40,13 +40,11 @@ class ViewController: UIViewController {
     
     func displaySearch(u:URL, d:[String:Any], c:Int, r:[[String:Any]]) {
         Label.text = "\(c) results."
+        myMovies.append("\(c) results.")
         for each in r {
             let title: String? = each["title"] as? String
-            Label.text! += "2"
             if let title = title {
-                Label.text! += "3"
                 myMovies.append(title)
-                Label.text = title
             }
             else {
                 Label.text = "Googgo"
@@ -59,11 +57,14 @@ class ViewController: UIViewController {
     
     @IBAction func nextMovie(_ sender: UIButton) {
         if myMovies != [""] {
-            if selectedMov > myMovies.count {
+            let supernum = selectedMov
+            selectedMov += 1
+            let num = selectedMov + 1
+            if num > myMovies.count {
+                selectedMov = supernum
                 Label.text = "That's All!"
             }
             else {
-                selectedMov += 1
                 Label.text = myMovies[selectedMov]
             }
         }
@@ -72,14 +73,15 @@ class ViewController: UIViewController {
         }
     }
     
+    
     @IBAction func prevMovie(_ sender: UIButton) {
         if myMovies != [""] {
+            selectedMov -= 1
             if selectedMov <= 0 {
                 Label.text = myMovies[0]
                 selectedMov = 0
             }
             else {
-                selectedMov -= 1
                 Label.text = myMovies[selectedMov]
             }
         }
@@ -89,7 +91,13 @@ class ViewController: UIViewController {
     }
     
     func search() {
-        let url: URL? = URL(string: "https://swapi.co/api/films/?search=A%20New%20Hope")
+        myMovies = [""]
+        selectedMov = 0
+        let baseUrlString = "https://swapi.co/api/films/?search=\(Text.text)"
+        let newString = baseUrlString.replacingOccurrences(of: " ", with: "%20")
+        let url: URL? = URL(string: newString)
+        
+
         if let url = url {
             let responseData: Data? = try? Data(contentsOf: url)
             if let responseData = responseData {
@@ -111,9 +119,6 @@ class ViewController: UIViewController {
         else {
             Label.text = "Nonexistent"
         }
-        
-        myMovies = [""]
-        selectedMov = 0
 
 
     }
