@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var Button3: UIButton!
     
     var myMovies:[String] = [""]
-    var selectedMov:Int = 0
+    var selectedMov:Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,18 +39,17 @@ class ViewController: UIViewController {
     }
     
     func displaySearch(u:URL, d:[String:Any], c:Int, r:[[String:Any]]) {
-        Label.text = "\(c) results."
         myMovies.append("\(c) results.")
         for each in r {
             let title: String? = each["title"] as? String
             if let title = title {
                 myMovies.append(title)
+                Label.text = myMovies[selectedMov]
             }
             else {
                 Label.text = "Googgo"
             }
         }
-        Button.setTitle("Learn More", for: .normal)
         Button2.setTitle("Next Movie", for: .normal)
         Button3.setTitle("Previous Movie", for: .normal)
     }
@@ -77,9 +76,9 @@ class ViewController: UIViewController {
     @IBAction func prevMovie(_ sender: UIButton) {
         if myMovies != [""] {
             selectedMov -= 1
-            if selectedMov <= 0 {
-                Label.text = myMovies[0]
-                selectedMov = 0
+            if selectedMov <= 1 {
+                Label.text = myMovies[1]
+                selectedMov = 1
             }
             else {
                 Label.text = myMovies[selectedMov]
@@ -92,8 +91,8 @@ class ViewController: UIViewController {
     
     func search() {
         myMovies = [""]
-        selectedMov = 0
-        let baseUrlString = "https://swapi.co/api/films/?search=\(Text.text)"
+        selectedMov = 1
+        let baseUrlString = "https://swapi.co/api/films/?search=\(Text.text!)"
         let newString = baseUrlString.replacingOccurrences(of: " ", with: "%20")
         let url: URL? = URL(string: newString)
         
@@ -111,9 +110,24 @@ class ViewController: UIViewController {
                             if let results = results {
                                 displaySearch(u:url, d:dictionary, c:count, r:results)
                             }
+                            else {
+                                Label.text = "Apologies."
+                            }
+                        }
+                        else {
+                            Label.text = "That's not a movie"
                         }
                     }
+                    else {
+                        Label.text = "Nada"
+                    }
                 }
+                else {
+                    Label.text = "Sorry"
+                }
+            }
+            else {
+                Label.text = "It doesn't exist"
             }
         }
         else {
