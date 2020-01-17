@@ -15,9 +15,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var Button: UIButton!
     @IBOutlet weak var Button2: UIButton!
     @IBOutlet weak var Button3: UIButton!
+    @IBOutlet weak var Button4: UIButton!
     
-    var myMovies:[String] = [""]
-    var selectedMov:Int = 1
+    var myMovies:[String] = []
+    var selectedMov:Int = 0
+    var movieItemStuff: [String:Any] = [:]
+    var baseMovieURL: String = ""
+    
+    var finalMovieDictionary: [String:Any] = [:]
+    
+    var moviesNum:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +32,7 @@ class ViewController: UIViewController {
         Button.setTitle("Search", for: .normal)
         Button2.setTitle("", for: .normal)
         Button3.setTitle("", for: .normal)
+        Button4.setTitle("", for: .normal)
         Label.text = "Search for any Star Wars Film!"
     }
     
@@ -39,32 +47,39 @@ class ViewController: UIViewController {
     }
     
     func displaySearch(u:URL, d:[String:Any], c:Int, r:[[String:Any]]) {
-        myMovies.append("\(c) results.")
+        moviesNum = "\(c) results."
+        movieItemStuff = d
         for each in r {
             let title: String? = each["title"] as? String
             if let title = title {
                 myMovies.append(title)
-                Label.text = myMovies[selectedMov]
+                selectedMov = -1
+                Label.text = moviesNum
             }
             else {
                 Label.text = "Googgo"
             }
         }
         Button2.setTitle("Next Movie", for: .normal)
-        Button3.setTitle("Previous Movie", for: .normal)
     }
     
     @IBAction func nextMovie(_ sender: UIButton) {
-        if myMovies != [""] {
-            let supernum = selectedMov
+        if myMovies != [] {
             selectedMov += 1
-            let num = selectedMov + 1
-            if num > myMovies.count {
-                selectedMov = supernum
-                Label.text = "That's All!"
+            if selectedMov >= myMovies.count {
+                Label.text = "That's all!"
+                selectedMov = myMovies.count
+                Button2.setTitle("", for: .normal)
+                Button3.setTitle("Previous Movie", for: .normal)
+                Button4.setTitle("", for: .normal)
             }
             else {
                 Label.text = myMovies[selectedMov]
+                let turkey = movieItemStuff["results"]! as! [[String:Any]]
+                baseMovieURL = turkey[selectedMov]["url"] as! String
+                Button2.setTitle("Next Movie", for: .normal)
+                Button3.setTitle("Previous Movie", for: .normal)
+                Button4.setTitle("Find Out More", for: .normal)
             }
         }
         else {
@@ -74,14 +89,22 @@ class ViewController: UIViewController {
     
     
     @IBAction func prevMovie(_ sender: UIButton) {
-        if myMovies != [""] {
+        if myMovies != [] {
             selectedMov -= 1
-            if selectedMov <= 1 {
-                Label.text = myMovies[1]
-                selectedMov = 1
+            if selectedMov < 0 {
+                Label.text = moviesNum
+                selectedMov = -1
+                Button2.setTitle("Next Movie", for: .normal)
+                Button3.setTitle("", for: .normal)
+                Button4.setTitle("", for: .normal)
             }
             else {
                 Label.text = myMovies[selectedMov]
+                let turkey = movieItemStuff["results"]! as! [[String:Any]]
+                baseMovieURL = turkey[selectedMov]["url"] as! String
+                Button2.setTitle("Next Movie", for: .normal)
+                Button3.setTitle("Previous Movie", for: .normal)
+                Button4.setTitle("Find Out More", for: .normal)
             }
         }
         else {
@@ -89,9 +112,27 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func findOut(_ sender: Any) {
+        let url: URL? = URL(string: baseMovieURL)
+        
+        if let url = url {
+            let responseData:Data? = try? Data(contentsOf: url)
+            if let responseData = responseData {
+                let json: Any? = try? JSONSerialization.jsonObject(with: responseData, options: [])
+                if let json = json {
+                    let dictionary: [String: Any]? = json as? [String: Any]
+                    if let dictionary = dictionary {
+                        finalMovieDictionary = dictionary
+                    }
+                }
+            }
+        }
+    }
+    
+    
     func search() {
-        myMovies = [""]
-        selectedMov = 1
+        myMovies = []
+        selectedMov = 0
         let baseUrlString = "https://swapi.co/api/films/?search=\(Text.text!)"
         let newString = baseUrlString.replacingOccurrences(of: " ", with: "%20")
         let url: URL? = URL(string: newString)
@@ -135,6 +176,12 @@ class ViewController: UIViewController {
         }
 
 
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? TableViewController {
+            destination.myDict = finalMovieDictionary
+        }
     }
 
 
