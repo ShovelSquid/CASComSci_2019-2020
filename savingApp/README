@@ -1,0 +1,17 @@
+What is this app?
+- ideally, it is a character creator. You can see a list of all your created characters, see their stats, edit them, level them up, 
+add new characters and delete others. 
+
+Is anything broken?
+- yes.
+
+What is broken?
+- most of everything. Loading the characters doesn't work properly; it just returns an empty list. 
+- Saving doesn't seem to work properly either
+- Since loading returns a list of empty characters, no characters are displayed. That means that you cannot tap any to view their stats.
+If there were any in there with actual stats, that works. Howevers, there aren't any in there right now.
+- Before, whenever I tried to make a new character the program would crash and I would get a SIGABRT. This scared me so I foolishly
+decided to create a new app. This did not proceed very far, the program wouldn't recognize the character class I had defined and treated
+it like a string. So I then returned back to this program.
+
+This has been a learning experience.
