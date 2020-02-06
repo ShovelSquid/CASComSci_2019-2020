@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hog-cT-HJq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DynamoStackView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EP6-Fb-wOO">
+                                <rect key="frame" x="0.0" y="88" width="414" height="129"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="1"/>
+                                <connections>
+                                    <segue destination="IfR-i8-bCr" kind="show" id="rh3-Yc-L9Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLd-gs-e0Z">
+                                <rect key="frame" x="0.0" y="217" width="414" height="129"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="5"/>
+                                <connections>
+                                    <segue destination="IfR-i8-bCr" kind="show" id="cdf-NK-czZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPh-gP-fPa">
+                                <rect key="frame" x="0.0" y="346" width="414" height="129"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="10"/>
+                                <connections>
+                                    <segue destination="IfR-i8-bCr" kind="show" id="h1C-Na-v2P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sls-eR-j4d">
+                                <rect key="frame" x="0.0" y="475" width="414" height="129"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="25"/>
+                                <connections>
+                                    <segue destination="IfR-i8-bCr" kind="show" id="tvf-xx-bOR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KK-QZ-t56">
+                                <rect key="frame" x="0.0" y="604" width="414" height="129"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="50"/>
+                                <connections>
+                                    <segue destination="IfR-i8-bCr" kind="show" id="XRI-2N-Uh5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wG-R7-XPK">
+                                <rect key="frame" x="0.0" y="733" width="414" height="129"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="5000"/>
+                                <connections>
+                                    <segue destination="IfR-i8-bCr" kind="show" id="g2b-DH-b9S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6KK-QZ-t56" secondAttribute="trailing" id="1l5-61-ind"/>
+                            <constraint firstItem="Sls-eR-j4d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1xS-Sd-9nu"/>
+                            <constraint firstItem="GPh-gP-fPa" firstAttribute="height" secondItem="EP6-Fb-wOO" secondAttribute="height" id="6gF-Xt-w3H"/>
+                            <constraint firstItem="5wG-R7-XPK" firstAttribute="top" secondItem="6KK-QZ-t56" secondAttribute="bottom" id="7zJ-0J-8eG"/>
+                            <constraint firstItem="EP6-Fb-wOO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9cV-Pa-l7E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WLd-gs-e0Z" secondAttribute="trailing" id="A1M-dI-jO7"/>
+                            <constraint firstItem="WLd-gs-e0Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CZ8-0p-zdr"/>
+                            <constraint firstItem="WLd-gs-e0Z" firstAttribute="top" secondItem="EP6-Fb-wOO" secondAttribute="bottom" id="G7C-c6-z2d"/>
+                            <constraint firstItem="EP6-Fb-wOO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HXm-gY-Jxw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5wG-R7-XPK" secondAttribute="bottom" id="L5h-3h-Rc7"/>
+                            <constraint firstItem="WLd-gs-e0Z" firstAttribute="height" secondItem="EP6-Fb-wOO" secondAttribute="height" id="Lln-RD-3vI"/>
+                            <constraint firstItem="GPh-gP-fPa" firstAttribute="width" secondItem="EP6-Fb-wOO" secondAttribute="width" id="N6t-GI-dhw"/>
+                            <constraint firstItem="6KK-QZ-t56" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NEY-Wr-65v"/>
+                            <constraint firstItem="5wG-R7-XPK" firstAttribute="height" secondItem="EP6-Fb-wOO" secondAttribute="height" id="NS2-s5-fDG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EP6-Fb-wOO" secondAttribute="trailing" id="Ow6-sW-71F"/>
+                            <constraint firstItem="Sls-eR-j4d" firstAttribute="top" secondItem="GPh-gP-fPa" secondAttribute="bottom" id="Ozp-st-zxt"/>
+                            <constraint firstItem="Sls-eR-j4d" firstAttribute="height" secondItem="EP6-Fb-wOO" secondAttribute="height" id="S95-sU-Cnv"/>
+                            <constraint firstItem="6KK-QZ-t56" firstAttribute="width" secondItem="EP6-Fb-wOO" secondAttribute="width" id="TrK-am-J6u"/>
+                            <constraint firstItem="GPh-gP-fPa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vpu-1R-Yyi"/>
+                            <constraint firstItem="5wG-R7-XPK" firstAttribute="width" secondItem="EP6-Fb-wOO" secondAttribute="width" id="XLo-oL-VxH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5wG-R7-XPK" secondAttribute="trailing" id="XTp-zY-8ag"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GPh-gP-fPa" secondAttribute="trailing" id="Z5b-IQ-Uk7"/>
+                            <constraint firstItem="6KK-QZ-t56" firstAttribute="height" secondItem="EP6-Fb-wOO" secondAttribute="height" id="ZKg-2f-lZp"/>
+                            <constraint firstItem="GPh-gP-fPa" firstAttribute="top" secondItem="WLd-gs-e0Z" secondAttribute="bottom" id="bQn-3Q-McA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sls-eR-j4d" secondAttribute="trailing" id="d5y-nC-NcQ"/>
+                            <constraint firstItem="5wG-R7-XPK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f6Q-Fu-pL4"/>
+                            <constraint firstItem="WLd-gs-e0Z" firstAttribute="width" secondItem="EP6-Fb-wOO" secondAttribute="width" id="gvP-5Z-wT2"/>
+                            <constraint firstItem="Sls-eR-j4d" firstAttribute="width" secondItem="EP6-Fb-wOO" secondAttribute="width" id="sFb-BC-2Sv"/>
+                            <constraint firstItem="6KK-QZ-t56" firstAttribute="top" secondItem="Sls-eR-j4d" secondAttribute="bottom" id="yWZ-9Q-Vey"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="23K-bL-VtH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--King StackVC-->
+        <scene sceneID="nhs-MH-SA4">
+            <objects>
+                <viewController id="IfR-i8-bCr" customClass="KingStackVC" customModule="DynamoStackView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fuZ-1U-k5t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kai-yc-zts">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gw8-D0-mb7" firstAttribute="trailing" secondItem="Kai-yc-zts" secondAttribute="trailing" id="K4B-tZ-Heu"/>
+                            <constraint firstItem="Kai-yc-zts" firstAttribute="top" secondItem="gw8-D0-mb7" secondAttribute="top" id="c3z-rw-eBH"/>
+                            <constraint firstItem="gw8-D0-mb7" firstAttribute="bottom" secondItem="Kai-yc-zts" secondAttribute="bottom" id="kHi-I5-F2f"/>
+                            <constraint firstItem="Kai-yc-zts" firstAttribute="leading" secondItem="gw8-D0-mb7" secondAttribute="leading" id="zWq-pZ-kfx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gw8-D0-mb7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DSg-PH-RxN"/>
+                    <connections>
+                        <outlet property="LordStackView" destination="Kai-yc-zts" id="Gc9-95-mLZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NTR-lf-yEl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="138"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qGi-17-Zg6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hog-cT-HJq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dn4-zX-de4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pRr-Ol-p8g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3u8-5q-FkL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="cdf-NK-czZ"/>
+    </inferredMetricsTieBreakers>
+</document>
