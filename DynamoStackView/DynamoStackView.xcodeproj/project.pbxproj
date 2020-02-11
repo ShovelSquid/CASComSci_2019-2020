@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C56C8ABD23F26F9100A852A6 /* DynamicAdditionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56C8ABC23F26F9100A852A6 /* DynamicAdditionController.swift */; };
 		C5F3788C23EC7672005E6B25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F3788B23EC7672005E6B25 /* AppDelegate.swift */; };
 		C5F3788E23EC7672005E6B25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F3788D23EC7672005E6B25 /* SceneDelegate.swift */; };
 		C5F3789023EC7672005E6B25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F3788F23EC7672005E6B25 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C56C8ABC23F26F9100A852A6 /* DynamicAdditionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicAdditionController.swift; sourceTree = "<group>"; };
 		C5F3788823EC7671005E6B25 /* DynamoStackView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamoStackView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F3788B23EC7672005E6B25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5F3788D23EC7672005E6B25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				C5F3788D23EC7672005E6B25 /* SceneDelegate.swift */,
 				C5F3788F23EC7672005E6B25 /* ViewController.swift */,
 				C5F3789123EC7672005E6B25 /* Main.storyboard */,
+				C56C8ABC23F26F9100A852A6 /* DynamicAdditionController.swift */,
 				C5F3789F23EC7877005E6B25 /* KingStackVC.swift */,
 				C5F3789423EC7674005E6B25 /* Assets.xcassets */,
 				C5F3789623EC7674005E6B25 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				C5F378A023EC7877005E6B25 /* KingStackVC.swift in Sources */,
 				C5F3789023EC7672005E6B25 /* ViewController.swift in Sources */,
+				C56C8ABD23F26F9100A852A6 /* DynamicAdditionController.swift in Sources */,
 				C5F3788C23EC7672005E6B25 /* AppDelegate.swift in Sources */,
 				C5F3788E23EC7672005E6B25 /* SceneDelegate.swift in Sources */,
 			);

@@ -16,11 +16,16 @@ class ViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let ksvc = segue.destination as! KingStackVC
         let button = sender as! UIButton
-        let number:Int? = Int(button.titleLabel!.text!)
-        
-        ksvc.labelCount = number!
+        if button.titleLabel!.text! != "5000" {
+            let ksvc = segue.destination as! KingStackVC
+            let number:Int? = Int(button.titleLabel!.text!)
+            ksvc.labelCount = number!
+        }
+        else {
+            return
+        }
+
     }
 
 }
