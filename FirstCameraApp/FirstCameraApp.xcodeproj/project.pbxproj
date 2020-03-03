@@ -7,33 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C56C8ABD23F26F9100A852A6 /* DynamicAdditionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56C8ABC23F26F9100A852A6 /* DynamicAdditionController.swift */; };
-		C5D8C04E24082C4200E689AB /* GuesserButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D8C04D24082C4200E689AB /* GuesserButton.swift */; };
-		C5F3788C23EC7672005E6B25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F3788B23EC7672005E6B25 /* AppDelegate.swift */; };
-		C5F3788E23EC7672005E6B25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F3788D23EC7672005E6B25 /* SceneDelegate.swift */; };
-		C5F3789023EC7672005E6B25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F3788F23EC7672005E6B25 /* ViewController.swift */; };
-		C5F3789323EC7672005E6B25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5F3789123EC7672005E6B25 /* Main.storyboard */; };
-		C5F3789523EC7674005E6B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5F3789423EC7674005E6B25 /* Assets.xcassets */; };
-		C5F3789823EC7674005E6B25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5F3789623EC7674005E6B25 /* LaunchScreen.storyboard */; };
-		C5F378A023EC7877005E6B25 /* KingStackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F3789F23EC7877005E6B25 /* KingStackVC.swift */; };
+		C5A73AEC23FEFBE7007B3DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A73AEB23FEFBE7007B3DDC /* AppDelegate.swift */; };
+		C5A73AEE23FEFBE7007B3DDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A73AED23FEFBE7007B3DDC /* SceneDelegate.swift */; };
+		C5A73AF023FEFBE7007B3DDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A73AEF23FEFBE7007B3DDC /* ViewController.swift */; };
+		C5A73AF323FEFBE7007B3DDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5A73AF123FEFBE7007B3DDC /* Main.storyboard */; };
+		C5A73AF523FEFBF4007B3DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A73AF423FEFBF4007B3DDC /* Assets.xcassets */; };
+		C5A73AF823FEFBF4007B3DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5A73AF623FEFBF4007B3DDC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C56C8ABC23F26F9100A852A6 /* DynamicAdditionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicAdditionController.swift; sourceTree = "<group>"; };
-		C5D8C04D24082C4200E689AB /* GuesserButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuesserButton.swift; sourceTree = "<group>"; };
-		C5F3788823EC7671005E6B25 /* DynamoStackView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamoStackView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5F3788B23EC7672005E6B25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C5F3788D23EC7672005E6B25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C5F3788F23EC7672005E6B25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C5F3789223EC7672005E6B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C5F3789423EC7674005E6B25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C5F3789723EC7674005E6B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C5F3789923EC7674005E6B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5F3789F23EC7877005E6B25 /* KingStackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingStackVC.swift; sourceTree = "<group>"; };
+		C5A73AE823FEFBE7007B3DDC /* FirstCameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstCameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5A73AEB23FEFBE7007B3DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5A73AED23FEFBE7007B3DDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C5A73AEF23FEFBE7007B3DDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5A73AF223FEFBE7007B3DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5A73AF423FEFBF4007B3DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5A73AF723FEFBF4007B3DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5A73AF923FEFBF4007B3DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C5F3788523EC7671005E6B25 /* Frameworks */ = {
+		C5A73AE523FEFBE7007B3DDC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,75 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C5F3787F23EC7671005E6B25 = {
+		C5A73ADF23FEFBE7007B3DDC = {
 			isa = PBXGroup;
 			children = (
-				C5F3788A23EC7671005E6B25 /* DynamoStackView */,
-				C5F3788923EC7671005E6B25 /* Products */,
+				C5A73AEA23FEFBE7007B3DDC /* FirstCameraApp */,
+				C5A73AE923FEFBE7007B3DDC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C5F3788923EC7671005E6B25 /* Products */ = {
+		C5A73AE923FEFBE7007B3DDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C5F3788823EC7671005E6B25 /* DynamoStackView.app */,
+				C5A73AE823FEFBE7007B3DDC /* FirstCameraApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C5F3788A23EC7671005E6B25 /* DynamoStackView */ = {
+		C5A73AEA23FEFBE7007B3DDC /* FirstCameraApp */ = {
 			isa = PBXGroup;
 			children = (
-				C5F3788B23EC7672005E6B25 /* AppDelegate.swift */,
-				C5F3788D23EC7672005E6B25 /* SceneDelegate.swift */,
-				C5F3788F23EC7672005E6B25 /* ViewController.swift */,
-				C5F3789123EC7672005E6B25 /* Main.storyboard */,
-				C56C8ABC23F26F9100A852A6 /* DynamicAdditionController.swift */,
-				C5D8C04D24082C4200E689AB /* GuesserButton.swift */,
-				C5F3789F23EC7877005E6B25 /* KingStackVC.swift */,
-				C5F3789423EC7674005E6B25 /* Assets.xcassets */,
-				C5F3789623EC7674005E6B25 /* LaunchScreen.storyboard */,
-				C5F3789923EC7674005E6B25 /* Info.plist */,
+				C5A73AEB23FEFBE7007B3DDC /* AppDelegate.swift */,
+				C5A73AED23FEFBE7007B3DDC /* SceneDelegate.swift */,
+				C5A73AEF23FEFBE7007B3DDC /* ViewController.swift */,
+				C5A73AF123FEFBE7007B3DDC /* Main.storyboard */,
+				C5A73AF423FEFBF4007B3DDC /* Assets.xcassets */,
+				C5A73AF623FEFBF4007B3DDC /* LaunchScreen.storyboard */,
+				C5A73AF923FEFBF4007B3DDC /* Info.plist */,
 			);
-			path = DynamoStackView;
+			path = FirstCameraApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C5F3788723EC7671005E6B25 /* DynamoStackView */ = {
+		C5A73AE723FEFBE7007B3DDC /* FirstCameraApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C5F3789C23EC7674005E6B25 /* Build configuration list for PBXNativeTarget "DynamoStackView" */;
+			buildConfigurationList = C5A73AFC23FEFBF4007B3DDC /* Build configuration list for PBXNativeTarget "FirstCameraApp" */;
 			buildPhases = (
-				C5F3788423EC7671005E6B25 /* Sources */,
-				C5F3788523EC7671005E6B25 /* Frameworks */,
-				C5F3788623EC7671005E6B25 /* Resources */,
+				C5A73AE423FEFBE7007B3DDC /* Sources */,
+				C5A73AE523FEFBE7007B3DDC /* Frameworks */,
+				C5A73AE623FEFBE7007B3DDC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DynamoStackView;
-			productName = DynamoStackView;
-			productReference = C5F3788823EC7671005E6B25 /* DynamoStackView.app */;
+			name = FirstCameraApp;
+			productName = FirstCameraApp;
+			productReference = C5A73AE823FEFBE7007B3DDC /* FirstCameraApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C5F3788023EC7671005E6B25 /* Project object */ = {
+		C5A73AE023FEFBE7007B3DDC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Kaelen Cook";
 				TargetAttributes = {
-					C5F3788723EC7671005E6B25 = {
+					C5A73AE723FEFBE7007B3DDC = {
 						CreatedOnToolsVersion = 11.2;
 					};
 				};
 			};
-			buildConfigurationList = C5F3788323EC7671005E6B25 /* Build configuration list for PBXProject "DynamoStackView" */;
+			buildConfigurationList = C5A73AE323FEFBE7007B3DDC /* Build configuration list for PBXProject "FirstCameraApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,58 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = C5F3787F23EC7671005E6B25;
-			productRefGroup = C5F3788923EC7671005E6B25 /* Products */;
+			mainGroup = C5A73ADF23FEFBE7007B3DDC;
+			productRefGroup = C5A73AE923FEFBE7007B3DDC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C5F3788723EC7671005E6B25 /* DynamoStackView */,
+				C5A73AE723FEFBE7007B3DDC /* FirstCameraApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C5F3788623EC7671005E6B25 /* Resources */ = {
+		C5A73AE623FEFBE7007B3DDC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5F3789823EC7674005E6B25 /* LaunchScreen.storyboard in Resources */,
-				C5F3789523EC7674005E6B25 /* Assets.xcassets in Resources */,
-				C5F3789323EC7672005E6B25 /* Main.storyboard in Resources */,
+				C5A73AF823FEFBF4007B3DDC /* LaunchScreen.storyboard in Resources */,
+				C5A73AF523FEFBF4007B3DDC /* Assets.xcassets in Resources */,
+				C5A73AF323FEFBE7007B3DDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C5F3788423EC7671005E6B25 /* Sources */ = {
+		C5A73AE423FEFBE7007B3DDC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5D8C04E24082C4200E689AB /* GuesserButton.swift in Sources */,
-				C5F378A023EC7877005E6B25 /* KingStackVC.swift in Sources */,
-				C5F3789023EC7672005E6B25 /* ViewController.swift in Sources */,
-				C56C8ABD23F26F9100A852A6 /* DynamicAdditionController.swift in Sources */,
-				C5F3788C23EC7672005E6B25 /* AppDelegate.swift in Sources */,
-				C5F3788E23EC7672005E6B25 /* SceneDelegate.swift in Sources */,
+				C5A73AF023FEFBE7007B3DDC /* ViewController.swift in Sources */,
+				C5A73AEC23FEFBE7007B3DDC /* AppDelegate.swift in Sources */,
+				C5A73AEE23FEFBE7007B3DDC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C5F3789123EC7672005E6B25 /* Main.storyboard */ = {
+		C5A73AF123FEFBE7007B3DDC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C5F3789223EC7672005E6B25 /* Base */,
+				C5A73AF223FEFBE7007B3DDC /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		C5F3789623EC7674005E6B25 /* LaunchScreen.storyboard */ = {
+		C5A73AF623FEFBF4007B3DDC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C5F3789723EC7674005E6B25 /* Base */,
+				C5A73AF723FEFBF4007B3DDC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C5F3789A23EC7674005E6B25 /* Debug */ = {
+		C5A73AFA23FEFBF4007B3DDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -238,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		C5F3789B23EC7674005E6B25 /* Release */ = {
+		C5A73AFB23FEFBF4007B3DDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,36 +280,36 @@
 			};
 			name = Release;
 		};
-		C5F3789D23EC7674005E6B25 /* Debug */ = {
+		C5A73AFD23FEFBF4007B3DDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NSHAHHR78G;
-				INFOPLIST_FILE = DynamoStackView/Info.plist;
+				INFOPLIST_FILE = FirstCameraApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kaelenrexcook.DynamoStackView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaelenrexcook.FirstCameraApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		C5F3789E23EC7674005E6B25 /* Release */ = {
+		C5A73AFE23FEFBF4007B3DDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NSHAHHR78G;
-				INFOPLIST_FILE = DynamoStackView/Info.plist;
+				INFOPLIST_FILE = FirstCameraApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kaelenrexcook.DynamoStackView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaelenrexcook.FirstCameraApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,25 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C5F3788323EC7671005E6B25 /* Build configuration list for PBXProject "DynamoStackView" */ = {
+		C5A73AE323FEFBE7007B3DDC /* Build configuration list for PBXProject "FirstCameraApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C5F3789A23EC7674005E6B25 /* Debug */,
-				C5F3789B23EC7674005E6B25 /* Release */,
+				C5A73AFA23FEFBF4007B3DDC /* Debug */,
+				C5A73AFB23FEFBF4007B3DDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C5F3789C23EC7674005E6B25 /* Build configuration list for PBXNativeTarget "DynamoStackView" */ = {
+		C5A73AFC23FEFBF4007B3DDC /* Build configuration list for PBXNativeTarget "FirstCameraApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C5F3789D23EC7674005E6B25 /* Debug */,
-				C5F3789E23EC7674005E6B25 /* Release */,
+				C5A73AFD23FEFBF4007B3DDC /* Debug */,
+				C5A73AFE23FEFBF4007B3DDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C5F3788023EC7671005E6B25 /* Project object */;
+	rootObject = C5A73AE023FEFBE7007B3DDC /* Project object */;
 }

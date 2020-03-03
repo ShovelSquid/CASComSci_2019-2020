@@ -142,27 +142,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GVL-Oz-PY1">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="93v-f3-YkT">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                            </stackView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GVL-Oz-PY1">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </stackView>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="F1J-zS-A1f"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="P7I-HX-pfJ"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="GVL-Oz-PY1" firstAttribute="leading" secondItem="JzZ-B7-YsG" secondAttribute="leading" id="EZi-fW-MBr"/>
-                            <constraint firstItem="JzZ-B7-YsG" firstAttribute="trailing" secondItem="GVL-Oz-PY1" secondAttribute="trailing" id="Eri-bE-spx"/>
-                            <constraint firstItem="JzZ-B7-YsG" firstAttribute="bottom" secondItem="GVL-Oz-PY1" secondAttribute="bottom" id="Ln0-N4-hVi"/>
-                            <constraint firstItem="GVL-Oz-PY1" firstAttribute="top" secondItem="JzZ-B7-YsG" secondAttribute="top" id="hYd-az-vUr"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JzZ-B7-YsG"/>
                     </view>
                     <navigationItem key="navigationItem" id="AMI-Mr-HIw"/>
                     <connections>
                         <outlet property="buttonStacks" destination="GVL-Oz-PY1" id="OyN-PH-4FQ"/>
+                        <outlet property="scrollView" destination="93v-f3-YkT" id="emX-UM-Twf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V15-WB-M6Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2804" y="531"/>
+            <point key="canvasLocation" x="2802.898550724638" y="530.35714285714289"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qGi-17-Zg6">

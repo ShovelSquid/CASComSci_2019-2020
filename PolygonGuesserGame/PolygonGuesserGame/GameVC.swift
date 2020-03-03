@@ -12,7 +12,7 @@ class GameVC: UIViewController {
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var scrollView: UIScrollView!
     
-    var buttonAmt:Int = 0
+    var buttonAmt:Int = 17
     
     override func viewDidLoad() {
         super.viewDidLoad()
