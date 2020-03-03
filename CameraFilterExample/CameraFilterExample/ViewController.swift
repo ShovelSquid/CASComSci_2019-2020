@@ -20,7 +20,23 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         self.dismiss(animated: true, completion: nil)
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
-        imageView.image = image
+//        imageView.image = image
+        
+        let inputImage = image
+        let context = CIContext(options: nil)
+        
+        if let filter = CIFilter(name: "CIPhotoEffectInstant") {
+            let beginImage = CIImage(image: inputImage)
+            filter.setDefaults()
+            filter.setValue(beginImage, forKey: kCIInputImageKey)
+            
+            if let output = filter.outputImage {
+                if let cgimg = context.createCGImage(output, from: output.extent) {
+                    let processedImage = UIImage(cgImage: cgimg)
+                    imageView.image = processedImage
+                }
+            }
+        }
     }
     
 
