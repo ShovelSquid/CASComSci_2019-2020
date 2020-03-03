@@ -18,47 +18,47 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EP6-Fb-wOO">
                                 <rect key="frame" x="0.0" y="88" width="414" height="129"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="1"/>
+                                <state key="normal" title="Really Easy"/>
                                 <connections>
-                                    <segue destination="IfR-i8-bCr" kind="show" id="rh3-Yc-L9Q"/>
+                                    <segue destination="UZm-IL-pSL" kind="show" id="dGq-TT-Wib"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLd-gs-e0Z">
                                 <rect key="frame" x="0.0" y="217" width="414" height="129"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="5"/>
+                                <state key="normal" title="Easy"/>
                                 <connections>
-                                    <segue destination="IfR-i8-bCr" kind="show" id="cdf-NK-czZ"/>
+                                    <segue destination="UZm-IL-pSL" kind="show" id="VG4-Rj-rz1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPh-gP-fPa">
                                 <rect key="frame" x="0.0" y="346" width="414" height="129"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="10"/>
+                                <state key="normal" title="Normal"/>
                                 <connections>
-                                    <segue destination="IfR-i8-bCr" kind="show" id="h1C-Na-v2P"/>
+                                    <segue destination="UZm-IL-pSL" kind="show" id="8DN-lw-Emz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sls-eR-j4d">
                                 <rect key="frame" x="0.0" y="475" width="414" height="129"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="25"/>
+                                <state key="normal" title="Hard"/>
                                 <connections>
-                                    <segue destination="IfR-i8-bCr" kind="show" id="tvf-xx-bOR"/>
+                                    <segue destination="UZm-IL-pSL" kind="show" id="brI-qI-SUL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KK-QZ-t56">
                                 <rect key="frame" x="0.0" y="604" width="414" height="129"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="50"/>
+                                <state key="normal" title="Very Hard"/>
                                 <connections>
-                                    <segue destination="IfR-i8-bCr" kind="show" id="XRI-2N-Uh5"/>
+                                    <segue destination="UZm-IL-pSL" kind="show" id="AcK-8B-jae"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wG-R7-XPK">
                                 <rect key="frame" x="0.0" y="733" width="414" height="129"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="5000"/>
+                                <state key="normal" title="Why"/>
                                 <connections>
                                     <segue destination="UZm-IL-pSL" kind="show" id="Ent-PP-5Ce"/>
                                 </connections>
@@ -113,7 +113,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kai-yc-zts">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -188,6 +188,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cdf-NK-czZ"/>
+        <segue reference="Ent-PP-5Ce"/>
     </inferredMetricsTieBreakers>
 </document>

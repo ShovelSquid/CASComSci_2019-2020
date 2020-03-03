@@ -17,13 +17,24 @@ class ViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let button = sender as! UIButton
-        if button.titleLabel!.text! != "5000" {
-            let ksvc = segue.destination as! KingStackVC
-            let number:Int? = Int(button.titleLabel!.text!)
-            ksvc.labelCount = number!
+        let dyvc = segue.destination as! DynamicAdditionController
+        if button.titleLabel!.text! == "Really Easy" {
+            dyvc.buttonCount = 3
         }
-        else {
-            return
+        if button.titleLabel!.text! == "Easy" {
+            dyvc.buttonCount = 10
+        }
+        if button.titleLabel!.text! == "Normal" {
+            dyvc.buttonCount = 25
+        }
+        if button.titleLabel!.text! == "Hard" {
+            dyvc.buttonCount = 65
+        }
+        if button.titleLabel!.text! == "Very Hard" {
+            dyvc.buttonCount = 115
+        }
+        if button.titleLabel!.text! == "Why" {
+            dyvc.buttonCount = 625
         }
 
     }
