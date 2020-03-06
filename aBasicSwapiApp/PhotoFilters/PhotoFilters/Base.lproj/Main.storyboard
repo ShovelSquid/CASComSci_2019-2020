@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Co-hj-P01">
-                                <rect key="frame" x="0.0" y="44" width="414" height="559"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="512"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fp-p5-0r3">
                                 <rect key="frame" x="0.0" y="827" width="414" height="49"/>
@@ -31,21 +31,31 @@
                                 </items>
                             </toolbar>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdZ-QA-gge">
-                                <rect key="frame" x="0.0" y="611" width="414" height="216"/>
+                                <rect key="frame" x="0.0" y="564" width="414" height="216"/>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xx-TW-XYk">
+                                <rect key="frame" x="0.0" y="788" width="414" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Select"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="3fp-p5-0r3" firstAttribute="top" secondItem="cdZ-QA-gge" secondAttribute="bottom" id="2bf-Fj-Bsc"/>
+                            <constraint firstItem="1xx-TW-XYk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1hw-R4-mpG"/>
                             <constraint firstAttribute="bottom" secondItem="3fp-p5-0r3" secondAttribute="bottom" constant="20" id="4Mm-Yq-6UW"/>
                             <constraint firstItem="6Co-hj-P01" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4s9-cv-x9M"/>
                             <constraint firstItem="3fp-p5-0r3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Bqg-fb-Gir"/>
                             <constraint firstItem="6Co-hj-P01" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ddx-qy-YIX"/>
+                            <constraint firstItem="1xx-TW-XYk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OXq-QC-RgZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Co-hj-P01" secondAttribute="trailing" id="TUh-tY-20j"/>
-                            <constraint firstItem="cdZ-QA-gge" firstAttribute="top" secondItem="6Co-hj-P01" secondAttribute="bottom" constant="8" symbolic="YES" id="Yvt-eW-NTA"/>
-                            <constraint firstItem="cdZ-QA-gge" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hSn-11-oyI"/>
-                            <constraint firstItem="cdZ-QA-gge" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iYp-Fs-JIq"/>
+                            <constraint firstItem="cdZ-QA-gge" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UbO-n1-48O"/>
+                            <constraint firstItem="cdZ-QA-gge" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bsc-Em-E7p"/>
+                            <constraint firstItem="3fp-p5-0r3" firstAttribute="top" secondItem="1xx-TW-XYk" secondAttribute="bottom" symbolic="YES" id="ho7-Hb-QLh"/>
                             <constraint firstItem="3fp-p5-0r3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="keu-6O-T4N"/>
+                            <constraint firstItem="cdZ-QA-gge" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mfU-20-oWo"/>
+                            <constraint firstItem="cdZ-QA-gge" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rGa-Xv-uTD"/>
+                            <constraint firstItem="1xx-TW-XYk" firstAttribute="top" secondItem="cdZ-QA-gge" secondAttribute="bottom" constant="8" symbolic="YES" id="trQ-zJ-0Cr"/>
+                            <constraint firstItem="cdZ-QA-gge" firstAttribute="top" secondItem="6Co-hj-P01" secondAttribute="bottom" constant="8" symbolic="YES" id="xT4-oR-bWb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -53,11 +63,12 @@
                         <outlet property="barButton" destination="b8x-p7-PQN" id="4v0-rl-SRO"/>
                         <outlet property="imageView" destination="6Co-hj-P01" id="7ob-52-7gt"/>
                         <outlet property="pickerView" destination="cdZ-QA-gge" id="fms-2c-mab"/>
+                        <outlet property="selectButton" destination="1xx-TW-XYk" id="Yho-Eg-Xz7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>
