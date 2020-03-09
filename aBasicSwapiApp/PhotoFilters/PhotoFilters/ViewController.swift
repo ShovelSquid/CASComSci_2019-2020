@@ -40,12 +40,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         return filters.count
     }
     
-    
+
     
     @objc func selectFilter() {
         let inputImage = image!
         let row = pickerView.selectedRow(inComponent: 0)
         let selectedFilter = "CIPhotoEffect\(filters[row])"
+        
         
         if let filter = CIFilter(name: selectedFilter) {
             let beginImage = CIImage(image: inputImage)
@@ -53,7 +54,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             filter.setValue(beginImage, forKey: kCIInputImageKey)
             
             if let output = filter.outputImage {
-                let processedImage = UIImage(ciImage: output)
+                let processedImage = UIImage(ciImage: output, scale: 1, orientation: .down)
                 imageView.image = processedImage
             }
         }

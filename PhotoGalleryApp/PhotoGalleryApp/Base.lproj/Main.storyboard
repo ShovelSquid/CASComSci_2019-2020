@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,60 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoGalleryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lGl-mm-s0f">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="wtk-Jt-cJz"/>
+                                    <barButtonItem title="Item" image="camera.fill" catalog="system" id="U5e-z6-2T2">
+                                        <connections>
+                                            <action selector="launchPhotoPicker:" destination="BYZ-38-t0r" id="QGG-h9-oib"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="BRd-bT-nos"/>
+                                </items>
+                            </toolbar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N2h-OF-xCI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bAg-5R-93I">
+                                        <rect key="frame" x="152" y="273" width="110" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </stackView>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="dn6-MM-psl"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="uEo-9v-Ljt"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lGl-mm-s0f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BZA-i3-hcE"/>
+                            <constraint firstItem="lGl-mm-s0f" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="DbF-Vh-uXT"/>
+                            <constraint firstItem="N2h-OF-xCI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HWH-cV-Yom"/>
+                            <constraint firstItem="N2h-OF-xCI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NNe-GT-WcB"/>
+                            <constraint firstItem="N2h-OF-xCI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TFb-g9-HJu"/>
+                            <constraint firstItem="lGl-mm-s0f" firstAttribute="top" secondItem="N2h-OF-xCI" secondAttribute="bottom" symbolic="YES" id="WOW-wk-mBV"/>
+                            <constraint firstItem="lGl-mm-s0f" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bIy-IW-UrR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="TheView" destination="8bC-Xf-vdC" id="sWz-d4-crd"/>
+                        <outlet property="scrollView" destination="N2h-OF-xCI" id="THa-zY-ojN"/>
+                        <outlet property="stackView" destination="bAg-5R-93I" id="aPG-kV-7bf"/>
+                        <outlet property="toolbarButton" destination="U5e-z6-2T2" id="dlb-wW-ocL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera.fill" catalog="system" width="64" height="48"/>
+    </resources>
 </document>
