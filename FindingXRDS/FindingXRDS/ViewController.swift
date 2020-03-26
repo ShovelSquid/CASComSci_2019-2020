@@ -16,6 +16,12 @@ class ViewController: UIViewController, MKMapViewDelegate {
     let XRDSLatitude = 34.0240892
     let XRDSLongitude = -118.4747321
     
+    let EiffelLatitude = 48.858370
+    let EiffelLongitude = 2.294481
+    
+    let JerusalemLongitude = 31.7683
+    let JerusalemLatitude = 35.2137
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -37,6 +43,33 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let factor = 0.5
         zoom(factor)
     }
+    
+    @IBAction func findXRDS(_ sender: Any) {
+        let point = MKMapPoint(CLLocationCoordinate2D(latitude: XRDSLatitude, longitude: XRDSLongitude))
+        let size = MKMapSize(width: 1000, height: 1000)
+        let rect = MKMapRect(origin: point, size: size)
+        
+        mapView.setRegion(MKCoordinateRegion(rect), animated: true)
+    }
+    
+    @IBAction func findTower(_ sender: Any) {
+        let point = MKMapPoint(CLLocationCoordinate2D(latitude: EiffelLatitude, longitude: EiffelLongitude))
+        let size = MKMapSize(width: 1000, height: 1000)
+        let rect = MKMapRect(origin: point, size: size)
+        
+        mapView.setRegion(MKCoordinateRegion(rect), animated: true)
+    }
+    
+    @IBAction func findJerusalem(_ sender: Any) {
+        let point = MKMapPoint(CLLocationCoordinate2D(latitude: JerusalemLatitude, longitude: JerusalemLongitude))
+        let size = MKMapSize(width: 1000, height: 1000)
+        let rect = MKMapRect(origin: point, size: size)
+        
+        mapView.setRegion(MKCoordinateRegion(rect), animated: true)
+    }
+    
+    
+    
     
     
     func zoom(_ zoomFactor: Double) {

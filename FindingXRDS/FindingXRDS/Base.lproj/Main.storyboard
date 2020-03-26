@@ -39,6 +39,30 @@
                                     <action selector="ZoomIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T77-Bq-Twe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLa-V0-cHj">
+                                <rect key="frame" x="296" y="747" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Find XRDS"/>
+                                <connections>
+                                    <action selector="findXRDS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJG-8d-NyR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQc-BU-4bN">
+                                <rect key="frame" x="296" y="718" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Find Tower"/>
+                                <connections>
+                                    <action selector="findTower:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D3i-sF-gUJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVe-MW-WZt">
+                                <rect key="frame" x="293" y="692" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Find Jerusalem"/>
+                                <connections>
+                                    <action selector="findJerusalem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iI0-5y-Tfj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
