@@ -9,9 +9,10 @@
 import MapKit
 import UIKit
 
-class ViewController: UIViewController, MKMapViewDelegate {
+class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var label: UILabel!
     
     let XRDSLatitude = 34.0240892
     let XRDSLongitude = -118.4747321
@@ -22,8 +23,15 @@ class ViewController: UIViewController, MKMapViewDelegate {
     let JerusalemLongitude = 31.7683
     let JerusalemLatitude = 35.2137
     
+    var locationManager: CLLocationManager!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        
         // Do any additional setup after loading the view.
         mapView.delegate = self
         let crossroadsPoint = MKMapPoint(CLLocationCoordinate2D(latitude: XRDSLatitude, longitude: XRDSLongitude))
@@ -69,6 +77,11 @@ class ViewController: UIViewController, MKMapViewDelegate {
     }
     
     
+    @IBAction func findMe(_ sender: Any) {
+        print("finding...")
+        locationManager.requestLocation()
+    }
+    
     
     
     
@@ -86,15 +99,52 @@ class ViewController: UIViewController, MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         let rect = mapView.visibleMapRect
         let xrdslocation = CLLocationCoordinate2D(latitude: XRDSLatitude, longitude: XRDSLongitude)
+        let towerlocation = CLLocationCoordinate2D(latitude: EiffelLatitude, longitude: EiffelLongitude)
+        let holylocation = CLLocationCoordinate2D(latitude: JerusalemLatitude, longitude: JerusalemLongitude)
+        
+        
         let xrdsPoint = MKMapPoint(xrdslocation)
+        let towerPoint = MKMapPoint(towerlocation)
+        let holyPoint = MKMapPoint(holylocation)
+        
         
         if rect.contains(xrdsPoint) {
-            print("Crossroads!")
+            label.textColor! = UIColor.black
+            label.text! = "Our School, Crossroads!"
+            label.font = UIFont(name: "Copperplate", size: label.font.pointSize)
+            label.backgroundColor = UIColor.systemBackground
+        }
+        if rect.contains(towerPoint) {
+            label.textColor! = UIColor.systemTeal
+            label.text! = "Eiffel's Rocketship"
+            label.font = UIFont(name: "Copperplate", size: label.font.pointSize)
+            label.backgroundColor = UIColor.systemBackground
+        }
+        if rect.contains(holyPoint) {
+            label.textColor! = UIColor.red
+            label.text! = "JERUSALEM"
+            label.font = UIFont(name: "Zapfino", size: label.font.pointSize)
+            label.backgroundColor = UIColor.systemTeal
         }
         else {
-            print("no crossroads")
+            
         }
     }
+    
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let span = mapView.region.span
+        let coords = locations[locations.count - 1].coordinate
+        let newRegion = MKCoordinateRegion(center: coords, span: span)
+        mapView.setRegion(newRegion, animated: true)
+    }
+    
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
+    }
+    
+    
     
 }
 

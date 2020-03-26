@@ -18,70 +18,109 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eX2-IH-OdG">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </mapView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hk0-a4-hM3">
-                                <rect key="frame" x="181" y="830" width="213" height="32"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLa-V0-cHj">
+                                <rect key="frame" x="257" y="750" width="137" height="30"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Find XRDS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="findXRDS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJG-8d-NyR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQc-BU-4bN">
+                                <rect key="frame" x="257" y="715" width="137" height="30"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Find Tower">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="findTower:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D3i-sF-gUJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVe-MW-WZt">
+                                <rect key="frame" x="290" y="680" width="104" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Find Jerusalem">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="findJerusalem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iI0-5y-Tfj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnF-T4-Vue">
+                                <rect key="frame" x="0.0" y="828" width="414" height="68"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <state key="normal" title="Find Me">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="findMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gds-j3-MKC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUg-7K-5Wb">
+                                <rect key="frame" x="20" y="44" width="374" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="vG7-xS-cXA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1f-yO-zNz">
-                                <rect key="frame" x="20" y="812" width="69" height="30"/>
-                                <state key="normal" title="Zoom Out"/>
+                                <rect key="frame" x="20" y="790" width="69" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Zoom Out">
+                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="ZoomOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pcw-q5-Xs0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEF-U7-9RJ">
-                                <rect key="frame" x="97" y="812" width="56" height="30"/>
-                                <state key="normal" title="Zoom In"/>
+                                <rect key="frame" x="97" y="790" width="56" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Zoom In">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="ZoomIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T77-Bq-Twe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLa-V0-cHj">
-                                <rect key="frame" x="296" y="747" width="98" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Find XRDS"/>
-                                <connections>
-                                    <action selector="findXRDS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJG-8d-NyR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQc-BU-4bN">
-                                <rect key="frame" x="296" y="718" width="98" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Find Tower"/>
-                                <connections>
-                                    <action selector="findTower:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D3i-sF-gUJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVe-MW-WZt">
-                                <rect key="frame" x="293" y="692" width="104" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Find Jerusalem"/>
-                                <connections>
-                                    <action selector="findJerusalem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iI0-5y-Tfj"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dEF-U7-9RJ" secondAttribute="trailing" symbolic="YES" id="0WI-Fz-v6C"/>
+                            <constraint firstItem="KUg-7K-5Wb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4NB-mp-ewU"/>
+                            <constraint firstItem="oQc-BU-4bN" firstAttribute="top" secondItem="fVe-MW-WZt" secondAttribute="bottom" constant="5" id="5AB-6Y-MPf"/>
+                            <constraint firstItem="QLa-V0-cHj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="80f-Rc-MG0"/>
                             <constraint firstItem="eX2-IH-OdG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8fh-wh-j07"/>
                             <constraint firstItem="eX2-IH-OdG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-44" id="9dI-wB-4F2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J1f-yO-zNz" secondAttribute="bottom" constant="20" id="B8P-FK-tYM"/>
-                            <constraint firstItem="hk0-a4-hM3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="181" id="ItE-ZS-lhs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J1f-yO-zNz" secondAttribute="bottom" constant="42" id="B8P-FK-tYM"/>
+                            <constraint firstItem="QLa-V0-cHj" firstAttribute="top" secondItem="oQc-BU-4bN" secondAttribute="bottom" constant="5" id="BjH-CO-cA2"/>
+                            <constraint firstItem="fVe-MW-WZt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="Ctv-hx-koO"/>
+                            <constraint firstItem="MnF-T4-Vue" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JoO-UV-bad"/>
                             <constraint firstItem="J1f-yO-zNz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="La9-QX-Kh2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eX2-IH-OdG" secondAttribute="trailing" id="S6y-6o-X2p"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hk0-a4-hM3" secondAttribute="bottom" constant="1" id="ZU9-A5-7qp"/>
-                            <constraint firstItem="hk0-a4-hM3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dEF-U7-9RJ" secondAttribute="trailing" constant="8" symbolic="YES" id="i8I-JD-hLR"/>
+                            <constraint firstItem="MnF-T4-Vue" firstAttribute="top" secondItem="J1f-yO-zNz" secondAttribute="bottom" constant="8" id="Tr6-uG-XkR"/>
+                            <constraint firstAttribute="bottom" secondItem="MnF-T4-Vue" secondAttribute="bottom" id="ddQ-bN-1gV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KUg-7K-5Wb" secondAttribute="trailing" constant="20" id="eqX-4H-AsT"/>
+                            <constraint firstItem="MnF-T4-Vue" firstAttribute="top" secondItem="QLa-V0-cHj" secondAttribute="bottom" constant="48" id="i3e-YS-Ads"/>
                             <constraint firstItem="dEF-U7-9RJ" firstAttribute="leading" secondItem="J1f-yO-zNz" secondAttribute="trailing" constant="8" id="jA0-NR-76N"/>
-                            <constraint firstItem="dEF-U7-9RJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="jJe-sj-lSF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hk0-a4-hM3" secondAttribute="trailing" constant="20" id="sul-8f-PE5"/>
+                            <constraint firstItem="dEF-U7-9RJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-42" id="jJe-sj-lSF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QLa-V0-cHj" secondAttribute="trailing" constant="20" id="jqE-4y-otx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fVe-MW-WZt" secondAttribute="trailing" constant="20" id="lRv-8G-gVQ"/>
+                            <constraint firstItem="MnF-T4-Vue" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ljo-d4-8fo"/>
+                            <constraint firstItem="oQc-BU-4bN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="wkQ-ku-IIV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oQc-BU-4bN" secondAttribute="trailing" constant="20" id="wle-bQ-NJ1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eX2-IH-OdG" secondAttribute="bottom" constant="-34" id="xE9-NR-oLI"/>
+                            <constraint firstItem="KUg-7K-5Wb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yFo-le-yRX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="label" destination="KUg-7K-5Wb" id="0QH-OZ-2c9"/>
                         <outlet property="mapView" destination="eX2-IH-OdG" id="fer-Hh-BMr"/>
                     </connections>
                 </viewController>
