@@ -1,0 +1,10 @@
+This app relies a lot on location tracking data and most likely bluetooth to determine the locations of nearby people. If someone is
+carrying a phone, a smart watch, airpods, any sort of technology with tracking capabilities, they should be used to determine where
+they are in the physical world. The app warns the user when another person enters close range, such as 8 to 10 feet, so being able
+to track where other people are is important and may prove to be difficult.
+
+Tracking people who are not carrying any sort of technology would be quite difficult, and would most likely go undetected.
+Perhaps some sort of AR technology could be implemented to detect humans, regardless of if they had a phone on them or not. Nonetheless,
+this poses a challenge and a risk.
+
+Location tracking data for the user should be quite simple, determining whether or not they are inside or outside via their location.
