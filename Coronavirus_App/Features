@@ -1,0 +1,15 @@
+A person taking a stroll should be able to run away after hearing a loud noise emanating from their phone.
+This loud noise is caused by other people coming within close contact of the user.
+The loud noise does not have to be a loud beeping noise, the app will utilize fun(ish) voice-overs in order to incentivize 
+the user to run away with alarming speed.
+Voice overs may include:
+  - Infected Detected! Run away!
+  - Its too late for me, save yourself!
+  - I always wanted you to know... you need to wash your hands!
+Things of that caliber.
+The app itself does not really have any functions, it is however always on and always monitoring for other people.
+The app does not need to be open in order for the VO to play, however notifications must be enabled.
+The app itself would only be used for configuration, however there may be a big button in the center that says, "RUN" and it will then play
+the normal response to a human entering close quarters.
+The app should not be able to have access to the other human's personal data, so they would have no idea whether or not the person coming
+within breathing range would be infected or not. As such, the app will always tell you to run whenever another human enters the vicinity.
