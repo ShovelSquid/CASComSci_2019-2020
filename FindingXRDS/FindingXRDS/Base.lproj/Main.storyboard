@@ -18,7 +18,7 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eX2-IH-OdG">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLa-V0-cHj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLa-V0-cHj">
                                 <rect key="frame" x="257" y="750" width="137" height="30"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Find XRDS">
@@ -28,7 +28,7 @@
                                     <action selector="findXRDS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJG-8d-NyR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQc-BU-4bN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQc-BU-4bN">
                                 <rect key="frame" x="257" y="715" width="137" height="30"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Find Tower">
@@ -39,9 +39,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVe-MW-WZt">
-                                <rect key="frame" x="290" y="680" width="104" height="30"/>
+                                <rect key="frame" x="257" y="680" width="137" height="30"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Find Jerusalem">
+                                <state key="normal" title="Find Ohio">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -100,8 +100,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J1f-yO-zNz" secondAttribute="bottom" constant="42" id="B8P-FK-tYM"/>
                             <constraint firstItem="QLa-V0-cHj" firstAttribute="top" secondItem="oQc-BU-4bN" secondAttribute="bottom" constant="5" id="BjH-CO-cA2"/>
                             <constraint firstItem="fVe-MW-WZt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="Ctv-hx-koO"/>
+                            <constraint firstItem="fVe-MW-WZt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="257" id="D7H-sO-kjb"/>
                             <constraint firstItem="MnF-T4-Vue" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JoO-UV-bad"/>
                             <constraint firstItem="J1f-yO-zNz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="La9-QX-Kh2"/>
+                            <constraint firstItem="oQc-BU-4bN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="257" id="Mdf-dy-68b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eX2-IH-OdG" secondAttribute="trailing" id="S6y-6o-X2p"/>
                             <constraint firstItem="MnF-T4-Vue" firstAttribute="top" secondItem="J1f-yO-zNz" secondAttribute="bottom" constant="8" id="Tr6-uG-XkR"/>
                             <constraint firstAttribute="bottom" secondItem="MnF-T4-Vue" secondAttribute="bottom" id="ddQ-bN-1gV"/>
@@ -112,6 +114,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QLa-V0-cHj" secondAttribute="trailing" constant="20" id="jqE-4y-otx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fVe-MW-WZt" secondAttribute="trailing" constant="20" id="lRv-8G-gVQ"/>
                             <constraint firstItem="MnF-T4-Vue" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ljo-d4-8fo"/>
+                            <constraint firstItem="QLa-V0-cHj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="257" id="mRd-w5-25f"/>
                             <constraint firstItem="oQc-BU-4bN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="wkQ-ku-IIV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oQc-BU-4bN" secondAttribute="trailing" constant="20" id="wle-bQ-NJ1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eX2-IH-OdG" secondAttribute="bottom" constant="-34" id="xE9-NR-oLI"/>
@@ -120,6 +123,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="findButton" destination="MnF-T4-Vue" id="Gm2-cT-EfB"/>
                         <outlet property="label" destination="KUg-7K-5Wb" id="0QH-OZ-2c9"/>
                         <outlet property="mapView" destination="eX2-IH-OdG" id="fer-Hh-BMr"/>
                     </connections>

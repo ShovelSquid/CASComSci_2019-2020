@@ -13,6 +13,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var findButton: UIButton!
     
     let XRDSLatitude = 34.0240892
     let XRDSLongitude = -118.4747321
@@ -20,10 +21,13 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     let EiffelLatitude = 48.858370
     let EiffelLongitude = 2.294481
     
-    let JerusalemLongitude = 31.7683
-    let JerusalemLatitude = 35.2137
+    let JerusalemLongitude = -82.996216
+    let JerusalemLatitude = 40.367474
     
     var locationManager: CLLocationManager!
+    var userLocation: CLLocationCoordinate2D?
+    
+    var c:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,7 +82,8 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     
     @IBAction func findMe(_ sender: Any) {
-        print("finding...")
+        findButton.setTitle("Finding...", for: .normal)
+        c = 1
         locationManager.requestLocation()
     }
     
@@ -107,34 +112,60 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let towerPoint = MKMapPoint(towerlocation)
         let holyPoint = MKMapPoint(holylocation)
         
+
         
         if rect.contains(xrdsPoint) {
-            label.textColor! = UIColor.black
+            print("xrds!")
+            label.textColor! = UIColor.systemTeal
             label.text! = "Our School, Crossroads!"
             label.font = UIFont(name: "Copperplate", size: label.font.pointSize)
-            label.backgroundColor = UIColor.systemBackground
+            return
         }
+        
         if rect.contains(towerPoint) {
-            label.textColor! = UIColor.systemTeal
+            print("lasagna!")
+            label.textColor! = UIColor.systemRed
             label.text! = "Eiffel's Rocketship"
             label.font = UIFont(name: "Copperplate", size: label.font.pointSize)
-            label.backgroundColor = UIColor.systemBackground
+            return
         }
+        
         if rect.contains(holyPoint) {
-            label.textColor! = UIColor.red
-            label.text! = "JERUSALEM"
+            print("super lasanga!")
+            label.textColor! = UIColor.systemGreen
+            label.text! = "OHIO!!"
             label.font = UIFont(name: "Zapfino", size: label.font.pointSize)
-            label.backgroundColor = UIColor.systemTeal
+            return
         }
-        else {
+        if userLocation != nil {
+            let userPoint = MKMapPoint(userLocation!)
+            if rect.contains(userPoint) {
+                label.textColor! = UIColor.purple
+                label.text! = "There you are!"
+                label.font = UIFont(name: "Copperplate", size: label.font.pointSize)
+                return
+            }
+            else {
+                if c == 0 {
+                    findButton.setTitle("Find Me", for: .normal)
+                }
+            }
+        }
             
-        }
+            print("lame")
+            label.textColor! = UIColor.black
+            label.text! = "Somewhere in the world."
+            label.font = UIFont(name: "Copperplate", size: label.font.pointSize)
+        
     }
     
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        findButton.setTitle("Found!", for: .normal)
+        c = 0
         let span = mapView.region.span
         let coords = locations[locations.count - 1].coordinate
+        userLocation = coords
         let newRegion = MKCoordinateRegion(center: coords, span: span)
         mapView.setRegion(newRegion, animated: true)
     }
