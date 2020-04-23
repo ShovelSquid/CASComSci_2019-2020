@@ -1,0 +1,16 @@
+{
+    "name": "Gorgoroth",
+    "playerName": "Kaelen",
+    "race": "Swerkon",
+    "class": "Runner",
+    "HP": 37,
+    "abilities": [
+        "Legs",
+        "Put on goggles"
+    ],
+    "items": [
+        "Speed Juice",
+        "Stapler"
+    ],
+    "Hours until Sleep": 4
+}

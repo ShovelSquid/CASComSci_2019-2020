@@ -11,7 +11,8 @@ import SpriteKit
 class GameManager {
     var scene: GameScene!
     var nextTime: Double?
-    var timeExtension: Double = 0.1
+    var timeDefault: Double = 0.2
+    var timeExtension: Double = 0.2
     var playerDirection: Int = 4 // 1 == left, 2 == up, 3 == right, 4 == down
     var currentScore: Int = 0
     
@@ -74,6 +75,8 @@ class GameManager {
             let x = scene.playerPositions[0].0
             let y = scene.playerPositions[0].1
             if Int((scene.scorePos?.x)!) == y && Int((scene.scorePos?.y)!) == x {
+                let speedUp = timeExtension * 0.10
+                timeExtension -= speedUp
                 currentScore += 1
                 scene.currentScore.text = "Score: \(currentScore)"
                 generateNewPoint()
@@ -91,6 +94,7 @@ class GameManager {
             arrayOfPositions.remove(at: 0)
             if contains(apple: arrayOfPositions, cranberry: headOfSnake) {
                 playerDirection = 0
+                timeExtension = timeDefault
             }
         }
     }
